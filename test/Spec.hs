@@ -15,5 +15,5 @@ main = hspec $ do
     it "computes fuel" $ do
       Fuel.fromMass 12 `shouldBe` (2 :: Integer)
       Fuel.fromMass 14 `shouldBe` (2 :: Integer)
-      Fuel.fromMass 1969 `shouldBe` (654 :: Integer)
-      Fuel.fromMass 100756 `shouldBe` (33583 :: Integer)
+      Fuel.fromMass 1969 `shouldBe` (966 :: Integer)
+      Fuel.fromMass 100756 `shouldBe` (50346 :: Integer)

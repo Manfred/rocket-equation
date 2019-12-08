@@ -5,4 +5,6 @@ module Fuel
 fromMass :: Integer -> Integer
 fromMass mass
   | mass < 6 = 0
-  | otherwise = floor(fromIntegral(mass) / 3) - 2
+  | otherwise = do
+      let fuel = floor(fromIntegral(mass) / 3) - 2
+      fuel + fromMass(fuel)
